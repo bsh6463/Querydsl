@@ -10,7 +10,7 @@ import javax.persistence.*;
 @ToString(of = {"id", "username", "age"})
 public class Member {
 
-    @Id @Generated
+    @Id @GeneratedValue
     @Column(name = "member_id")
     private Long id;
 

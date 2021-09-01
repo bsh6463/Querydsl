@@ -2,10 +2,7 @@ package study.querydsl.entity;
 
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,7 +12,7 @@ import java.util.List;
 @ToString(of = {"id", "name"})
 public class Team {
 
-    @Id @Generated
+    @Id @GeneratedValue
     @Column(name = "team_id")
     private Long id;
     private String name;
